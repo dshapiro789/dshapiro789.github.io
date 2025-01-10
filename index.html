@@ -6,29 +6,23 @@
     <title>Download Aeon Voyager APK</title>
     <style>
         body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            background-color: #f0f0f0;
             margin: 0;
             font-family: Arial, sans-serif;
-            text-align: center;
+            background-color: #f9f9f9;
+            color: #333;
         }
 
         .container {
-            background: white;
+            max-width: 1200px;
+            margin: 0 auto;
             padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            max-width: 90%;
-            width: 400px;
+            text-align: center;
         }
 
         h1 {
-            font-size: 24px;
+            font-size: 2rem;
             margin-bottom: 20px;
-            color: #333;
+            color: #0C4C46;
         }
 
         a {
@@ -47,23 +41,46 @@
             background-color: #093B36;
         }
 
-        .release-notes {
+        .image-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
             margin-top: 30px;
+        }
+
+        .image-gallery img {
+            width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .image-gallery img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .release-notes {
+            margin-top: 50px;
             text-align: left;
         }
 
         .release-notes h2 {
-            font-size: 20px;
+            font-size: 1.5rem;
             color: #0C4C46;
             border-bottom: 2px solid #0C4C46;
             padding-bottom: 5px;
             margin-bottom: 10px;
         }
 
-        .release-notes p {
+        .release-notes ul {
+            padding-left: 20px;
+        }
+
+        .release-notes li {
             font-size: 16px;
             color: #555;
-            line-height: 1.5;
+            line-height: 1.6;
         }
 
         .note {
@@ -77,6 +94,14 @@
     <div class="container">
         <h1>Download Aeon Voyager APK</h1>
         <a href="app-release.apk" download>Download the App</a>
+
+        <div class="image-gallery">
+            <img src="https://github.com/user-attachments/assets/c95b1604-5fd4-420d-aaa4-3159df4eb09e" alt="Vacation List">
+            <img src="https://github.com/user-attachments/assets/dd63667b-fd2f-4657-8000-f87a9a7065f6" alt="App Introduction">
+            <img src="https://github.com/user-attachments/assets/11404ff5-6f2b-404e-b92d-2884f2e8939d" alt="Vacation Details">
+            <img src="https://github.com/user-attachments/assets/fe9e4a6f-932d-4c67-a5c6-b6951045eed2" alt="Options Menu">
+            <img src="https://github.com/user-attachments/assets/7287df95-9817-4cd6-bffc-2cd1c1fbd80e" alt="Search">
+        </div>
 
         <div class="release-notes">
             <h2>Release Notes</h2>
